@@ -223,78 +223,79 @@ nav {
     color: var(--text-light);
 }
 
-/* Pricing Section */
-.pricing {
+/* Coming Soon Section */
+.coming-soon {
     padding: 6rem 0;
     background: #f8fafc;
 }
 
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.coming-soon-content {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.pricing-card {
+.coming-soon-card {
     background: white;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 3rem 2rem;
     box-shadow: var(--shadow);
-    position: relative;
+    text-align: center;
     transition: transform 0.3s;
 }
 
-.pricing-card.featured {
-    transform: scale(1.05);
-    border: 2px solid var(--primary);
+.coming-soon-card:hover {
+    transform: translateY(-5px);
 }
 
-.popular-tag {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
+.coming-soon-icon {
+    width: 80px;
+    height: 80px;
     background: var(--primary);
     color: white;
-    padding: 0.25rem 1rem;
-    border-radius: 1rem;
-    font-size: 0.875rem;
-    font-weight: 500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
 }
 
-.pricing-card h3 {
+.coming-soon-icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.coming-soon-card h3 {
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--text);
 }
 
-.price {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 2rem;
-}
-
-.price span {
-    font-size: 1rem;
+.coming-soon-card p {
     color: var(--text-light);
-}
-
-.features-list {
-    list-style: none;
     margin-bottom: 2rem;
+    font-size: 1.125rem;
 }
 
-.features-list li {
-    margin-bottom: 0.75rem;
-    color: var(--text-light);
+.newsletter-form {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.features-list li::before {
-    content: "✓";
-    color: var(--success);
+.newsletter-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--primary);
 }
 
 /* Contact Section */
